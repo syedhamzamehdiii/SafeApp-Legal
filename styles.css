@@ -78,19 +78,17 @@ body {
   letter-spacing: -0.02em;
 }
 
-.logo-icon {
-  display: flex;
-  color: var(--color-accent);
+.logo-img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
-.logo-icon svg {
+.logo-img--sm {
   width: 28px;
   height: 28px;
-}
-
-.logo-icon--sm svg {
-  width: 22px;
-  height: 22px;
 }
 
 .nav {
