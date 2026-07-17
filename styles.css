@@ -493,6 +493,11 @@ main > .legal-doc:first-child {
   background: #eef0fa;
 }
 
+.doc-badge--delete {
+  color: #8a3b2e;
+  background: #f8ebe8;
+}
+
 .doc-header h1,
 .doc-header h2 {
   margin: 0 0 0.5rem;
@@ -541,6 +546,52 @@ main > .legal-doc:first-child {
   line-height: 1.75;
 }
 
+.clause p + p,
+.clause h3 + p,
+.clause ul + p,
+.clause ol + p {
+  margin-top: 0.85rem;
+}
+
+.clause p + h3,
+.clause ul + h3,
+.clause ol + h3 {
+  margin-top: 1.25rem;
+}
+
+.clause ul,
+.clause ol {
+  margin: 0.75rem 0 0;
+  padding-left: 1.35rem;
+  color: var(--color-text-muted);
+  font-size: 1rem;
+  line-height: 1.75;
+}
+
+.clause li + li {
+  margin-top: 0.35rem;
+}
+
+.clause a {
+  color: var(--color-accent-dark);
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.clause a:hover {
+  color: var(--color-accent);
+}
+
+.clause-notice {
+  padding: 1rem 1.15rem;
+  font-weight: 600;
+  color: var(--color-text) !important;
+  background: #f8ebe8;
+  border-left: 3px solid #c45c4a;
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
 .doc-divider {
   display: flex;
   justify-content: center;
@@ -582,6 +633,7 @@ main > .legal-doc:first-child {
 
 .footer-nav {
   display: flex;
+  flex-wrap: wrap;
   gap: 1.25rem;
   margin-left: auto;
 }
@@ -927,8 +979,8 @@ main > .legal-doc:first-child {
   }
 
   .nav-link {
-    padding: 0.45rem 0.65rem;
-    font-size: 0.8rem;
+    padding: 0.4rem 0.5rem;
+    font-size: 0.72rem;
   }
 
   .hero {
