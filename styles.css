@@ -498,6 +498,11 @@ main > .legal-doc:first-child {
   background: #f8ebe8;
 }
 
+.doc-badge--safety {
+  color: #6b4a1a;
+  background: #f5efdf;
+}
+
 .doc-header h1,
 .doc-header h2 {
   margin: 0 0 0.5rem;
@@ -979,8 +984,8 @@ main > .legal-doc:first-child {
   }
 
   .nav-link {
-    padding: 0.4rem 0.5rem;
-    font-size: 0.72rem;
+    padding: 0.35rem 0.4rem;
+    font-size: 0.68rem;
   }
 
   .hero {
